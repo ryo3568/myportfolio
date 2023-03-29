@@ -1,14 +1,21 @@
 import matter from 'gray-matter'
-import reactMarkdown from 'react-markdown'
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import ReactMarkdown from 'react-markdown'
+import Image from 'next/image'
 
 const SingleBlog = (props) => {
     return (
-        <div>
-            <h1>{props.frontmatter.title}</h1>
-            <p>{props.frontmatter.date}</p>
-            <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
-        </div>
+        <>
+            <div>
+                <Image src={props.frontmatter.image} alt="blog-image" height={500} width={1000} priority />
+            </div>
+            <div>
+                <div>
+                    <h1>{props.frontmatter.title}</h1>
+                    <p>{props.frontmatter.date}</p>
+                    <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
+                </div>
+            </div>
+        </>
     )
 }
 
