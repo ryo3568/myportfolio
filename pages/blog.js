@@ -1,10 +1,11 @@
 import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
+import Layout from "../components/layout"
 
 const Blog = (props) => {
     return (
-        <>
+        <Layout>
             <div>
                 <div>
                     <h1>Blog</h1>
@@ -26,7 +27,7 @@ const Blog = (props) => {
                     })}
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 
