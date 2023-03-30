@@ -4,8 +4,8 @@ import Image from 'next/image'
 const Header = () => {
     return (
         <header>
-            <div>
-                <div>
+            <div className='container'>
+                <div className='flexContainer'>
                     <Link href="/">
                         <Image src="/images/logo.png" alt="logo" width={50} height={50} />
                     </Link>

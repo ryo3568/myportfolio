@@ -1,20 +1,22 @@
-import matter from 'gray-matter'
+import { getAllBlogs, getSingleBlog } from '@/utils/mdQueries'
+import PrevNext from '@/components/prevNext'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 
 const SingleBlog = (props) => {
     return (
         <Layout>
-            <div>
+            <div className='img-container'>
                 <Image src={props.frontmatter.image} alt="blog-image" height={500} width={1000} priority />
             </div>
-            <div>
-                <div>
+            <div className='wrapper'>
+                <div className='container'>
                     <h1>{props.frontmatter.title}</h1>
                     <p>{props.frontmatter.date}</p>
                     <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
                 </div>
+                <PrevNext prev={props.prev} next={props.next} />
             </div>
         </Layout>
     )
@@ -23,17 +25,9 @@ const SingleBlog = (props) => {
 export default SingleBlog
 
 export async function getStaticPaths(){
-    const blogSlugs = ((context) => {
-        const keys = context.keys()
-        const data = keys.map((key, index) => {
-            let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3)
-            return slug
-        })
-        return data
-    })(require.context('../../data', true, /^\..*\.md$/))
+    const {orderedBlogs} = await getAllBlogs()
 
-    const paths = blogSlugs.map((blogSlug) => `/blog/${blogSlug}`)
-
+    const paths = orderedBlogs.map((orderedBlog) => `/blog/${orderedBlog.slug}`)
     return {
         paths: paths,
         fallback: false,
@@ -41,13 +35,17 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps(context) {
-    const { slug } = context.params
-    const data = await import(`../../data/${slug}.md`)
-    const singleDocument = matter(data.default)
+    const {singleDocument} = await getSingleBlog(context)
+
+    const { orderedBlogs } = await getAllBlogs()
+    const prev = orderedBlogs.filter(orderedBlog => orderedBlog.frontmatter.id === singleDocument.data.id - 1)
+    const next = orderedBlogs.filter(orderedBlog => orderedBlog.frontmatter.id === singleDocument.data.id + 1)
     return {
         props: {
             frontmatter: singleDocument.data,
-            markdownBody: singleDocument.content
+            markdownBody: singleDocument.content,
+            prev: prev,
+            next: next,
         }
     }
 }

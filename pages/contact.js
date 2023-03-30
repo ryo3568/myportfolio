@@ -3,14 +3,14 @@ import Layout from "../components/layout"
 const Contact = () => {
     return (
         <Layout>
-            <div>
-                <div>
+            <div className="wrapper">
+                <div className="container">
                     <h1>Contact</h1>
                     <p>お気軽にご連絡ください</p>
-                    <form>
+                    <form action="https://formspree.io/f/xayzpepg" method="POST">
                         <label htmlFor="name">お名前</label>
                         <input type="text" name="name" id="name" required />
-                        <label htmlFor="email" name="email" id="email" required />
+                        <label htmlFor="email">メールアドレス</label>
                         <input type="text" name="email" id="email" required />
                         <label htmlFor="textarea">ご用件</label>
                         <textarea name="message" rows="10" id="textarea" required />
