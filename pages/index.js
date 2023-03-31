@@ -41,9 +41,6 @@ const Index = () => {
             <div><img src="/images/firebase.svg" alt="Firebase"/><span>Firebase</span></div>
           </div>
         </div>
-        <div className='ctaButton'>
-          <Link href="/contact">Make It Happen!</Link>
-        </div>
       </div>
     </Layout>
   )

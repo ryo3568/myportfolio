@@ -77,24 +77,6 @@
     height: 100px;
 }
 
-.ctaButton {
-    padding: 0 0 10rem;
-    text-align: center;
-}
-
-.ctaButton > a {
-    display: inline-block;
-    margin: 10rem 0;
-    padding: 1.3rem 6rem;
-    background-color: #ff5436;
-    border-radius: 25px; 
-    color: #fff;
-}
-
-.ctaButton > a:hover {
-    opacity: 0.8;
-}
-
 /* Media Queries */
 @media(max-width: 540px) { 
     .textContainer {
