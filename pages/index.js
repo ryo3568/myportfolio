@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const Index = () => {
   return (
     <Layout>
+      <Seo title="Ryo Yanagimoto" description="Ryo Yanagimotoのポートフォリオサイトです" />
       <div className='hero'>
         <Image src="/images/index-hero.jpg" alt="hero" fill quality={90} priority />
         <div className='textContainer'>

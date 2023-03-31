@@ -3,10 +3,14 @@ import PrevNext from '@/components/prevNext'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
+
+
 
 const SingleBlog = (props) => {
     return (
         <Layout>
+            <Seo title={props.frontmatter.title} description={props.frontmatter.excerpt} />
             <div className='img-container'>
                 <Image src={props.frontmatter.image} alt="blog-image" height={500} width={1000} priority />
             </div>
