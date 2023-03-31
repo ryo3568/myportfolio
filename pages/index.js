@@ -8,10 +8,10 @@ const Index = () => {
     <Layout>
       <Seo title="Ryo Yanagimoto" description="Ryo Yanagimotoのポートフォリオサイトです" />
       <div className='hero'>
-        <Image src="/images/index-hero.jpg" alt="hero" fill quality={90} priority />
+        <Image src="/images/sky.jpg" alt="hero" fill quality={90} priority />
         <div className='textContainer'>
           <h1>I'm Ryo Yanagimoto</h1>
-          <h3>JavaScript Developer</h3>
+          {/* <h3>JavaScript Developer</h3> */}
         </div>
       </div>
       <div className='container'>
@@ -27,10 +27,18 @@ const Index = () => {
         <div className='skills'>
           <h2>Skills</h2>
           <div className='skillsContainer'>
-            <div><img src="/images/javascript.svg" alt="javascript"/><span>JavaScript / 10 years</span></div>
-            <div><img src="/images/react.svg" alt="react"/><span>React / 5 years</span></div>
-            <div><img src="/images/gatsby.svg" alt="gatsby"/><span>Gatsby / 3 years</span></div>
-            <div><img src="/images/next.svg" alt="next"/><span>Next.js / 10 years</span></div>
+            <div><img src="/images/html-5.svg" alt="html5"/><span>HTML5</span></div>
+            <div><img src="/images/css-3.svg" alt="css3"/><span>CSS3</span></div>
+            <div><img src="/images/javascript.svg" alt="javascript"/><span>JavaScript</span></div>
+            <div><img src="/images/react.svg" alt="react"/><span>React</span></div>
+            <div><img src="/images/next.svg" alt="next"/><span>Next.js</span></div>
+            <div><img src="/images/nodejs-icon.svg" alt="nodejs"/><span>Node.js</span></div>
+            <div><img src="/images/express.svg" alt="express"/><span>Express</span></div>
+            <div><img src="/images/python.svg" alt="python"/><span>Python</span></div>
+            <div><img src="/images/c-plusplus.svg" alt="c++"/><span>C++</span></div>
+            <div><img src="/images/java.svg" alt="java"/><span>Java</span></div>
+            <div><img src="/images/mongodb-icon.svg" alt="MongoDB"/><span>MongoDB</span></div>
+            <div><img src="/images/firebase.svg" alt="Firebase"/><span>Firebase</span></div>
           </div>
         </div>
         <div className='ctaButton'>
