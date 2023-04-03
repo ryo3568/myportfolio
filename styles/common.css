@@ -52,6 +52,7 @@ footer {
 .insideContainer > * > img {
     width: 4rem;
     height: 4rem;
+    border-radius: 50%;
 }
 
 .insideContainer > hr {
