@@ -17,11 +17,42 @@ const Index = () => {
       <div className='container'>
         <div className='profile'>
           <div>
-            <h2>JavaScript</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h1>ABOUT ME</h1>
+            <p>鹿児島県出身の大学院生。大学では機械学習、特に対話システムの研究をしています。フルスタックエンジニアになるために勉強中。AI、ブロックチェーン、量子コンピュータが好き。</p>
           </div>
           <div className='image-container'>
             <Image src="/images/profile.jpg" alt="here" fill size="(max-width:800px) 100vw" quality={90} priority />
+          </div>
+        </div>
+        <div className='profile'>
+          <div className='image-container'>
+            <Image src="/images/hat.jpg" alt="here" fill size="(max-width:800px) 100vw" quality={90} priority />
+          </div>
+          <div>
+            <h2>EDUCATION</h2>
+            <h3>2022-, 大阪大学院</h3>
+            <p>工学研究科電気電子情報通信工学専攻</p>
+            <p>駒谷研究室</p>
+            <br/>
+            <h3>2018-2022, 同志社大学</h3>
+            <p>理工学部インテリジェント情報工学科</p>
+            <p>渡部研究室</p>
+          </div>
+        </div>
+        <div className='profile'>
+          <div>
+            <h2>QUALIFICATIONS</h2>
+            <p>2019.5, ITパスポート</p>
+            <p>2020.3, G検定 2020#1</p>
+            <p>2020.5, Python3エンジニア認定試験</p>
+            <p>2020.7, 統計検定 2級</p>
+            <p>2020.8, Python3エンジニア認定データ分析試験</p>
+            <p>2021.3, TOEIC L&R 930</p>
+            <p>2021.12, 基本情報技術者試験</p>
+            <p>2022.6, 応用情報技術者試験</p>
+          </div>
+          <div className='image-container'>
+            <Image src="/images/cat.jpg" alt="here" fill size="(max-width:800px) 100vw" quality={90} priority />
           </div>
         </div>
         <div className='skills'>

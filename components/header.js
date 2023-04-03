@@ -7,7 +7,7 @@ const Header = () => {
             <div className='container'>
                 <div className='flexContainer'>
                     <Link href="/">
-                        <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+                        <Image src="/images/logo.jpg" alt="logo" width={60} height={60} />
                     </Link>
                     <ul>
                         <li><Link href="/blog">Blog</Link></li>

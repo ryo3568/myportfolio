@@ -6,7 +6,6 @@ const Footer = () => {
         <footer>
             <div className='insideContainer'>
                 <a href="https://www.google.com"><img src="/images/github.svg" alt="logo"/></a>
-                <a href="https://www.google.com"><img src="/images/linkedin.svg" alt="logo"/></a>
                 <a href="https://www.google.com"><img src="/images/twitter.svg" alt="logo"/></a>
                 <a href="https://www.google.com"><img src="/images/facebook.svg" alt="logo"/></a>
                 <hr/>

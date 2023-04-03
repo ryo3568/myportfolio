@@ -19,7 +19,7 @@ const Seo = (props) => {
             <meta property="og:description" content={props.description} key="ogdescription" />
             <meta property='og:image' content={defaultImage} key="ogimage" />
             <meta property="og:url" content={currentUrl} key="ogurl" />
-            <link rel="shortcut icon" href="/images/favicon.ico" />
+            <link rel="shortcut icon" href="/images/logo.jpg" />
         </Head>
     )
 }
