@@ -48,6 +48,11 @@
     position: relative !important;
 }
 
+.profile > .profile-text > p{
+    font-size: 1.7rem;
+    /* width: 50rem; */
+}
+
 .skills { 
     padding: 0 0 10rem;
 }

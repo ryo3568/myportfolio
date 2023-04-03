@@ -16,7 +16,7 @@ const Index = () => {
       </div>
       <div className='container'>
         <div className='profile'>
-          <div>
+          <div class='profile-text'>
             <h1>ABOUT ME</h1>
             <p>鹿児島県出身の大学院生。大学では機械学習、特に対話システムの研究をしています。フルスタックエンジニアになるために勉強中。AI、ブロックチェーン、量子コンピュータが好き。</p>
           </div>
