@@ -10,7 +10,7 @@ const Header = () => {
                         <Image src="/images/logo.jpg" alt="logo" width={60} height={60} />
                     </Link>
                     <ul>
-                        <li><Link href="/blog">Blog</Link></li>
+                        <li><Link href="/blog">Works</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
                     </ul>
                 </div>

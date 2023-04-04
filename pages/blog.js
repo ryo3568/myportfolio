@@ -8,18 +8,23 @@ import Seo from "../components/seo"
 const Blog = (props) => {
     return (
         <Layout>
-            <Seo title="ブログ" description="これはブログページです" />
+            <Seo title="作品集" description="これは作品集ページです" />
             <div className='wrapper'>
                 <div className='container'>
-                    <h1>Blog</h1>
-                    <p>エンジニアの日常生活をお届けします</p>
+                    <h1>Works</h1>
+                    <p>これまで開発してきたサービス</p>
                     {props.blogs.map((blog, index) => {
                         return (
                             <div key={index} className='blogCard'>
                                 <div className='cardContainer'>
                                     <h3>{blog.frontmatter.title}</h3>
                                     <p>{blog.frontmatter.excerpt}</p>
-                                    <p>{blog.frontmatter.date}</p>
+                                    <Image src="images/javascript.svg" alt="card-image" height={30} width={30} quality={90} priority />
+                                    <Image src="images/react.svg" alt="card-image" height={30} width={30} quality={90} priority />
+                                    <Image src="images/nodejs-icon.svg" alt="card-image" height={30} width={30} quality={90} priority />
+                                    <Image src="images/express.svg" alt="card-image" height={30} width={30} quality={90} priority />
+                                    <Image src="images/mongodb-icon.svg" alt="card-image" height={30} width={30} quality={90} priority />
+                                    <br/>
                                     <Link href={`/blog/${blog.slug}`}>Read More</Link>
                                 </div>
                                 <div className='blogImg'>

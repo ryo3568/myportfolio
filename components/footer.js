@@ -9,7 +9,7 @@ const Footer = () => {
                 <a href="https://twitter.com/ryoyanagi314"><img src="/images/twitter.jpg" alt="logo"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100089916095333"><img src="/images/facebook.jpg" alt="logo"/></a>
                 <hr/>
-                <Link href="/blog">Blog</Link>
+                <Link href="/blog">Works</Link>
                 <Link href="/contact">Contact</Link>
                 <p>©{new Date().getFullYear()} Ryo Yanagimoto</p>
             </div>

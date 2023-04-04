@@ -1,6 +1,7 @@
 import { getAllBlogs, getSingleBlog } from '@/utils/mdQueries'
 import PrevNext from '@/components/prevNext'
 import ReactMarkdown from 'react-markdown'
+import Link from 'next/link'
 import Image from 'next/image'
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
@@ -16,8 +17,12 @@ const SingleBlog = (props) => {
             </div>
             <div className='wrapper'>
                 <div className='container'>
-                    <h1>{props.frontmatter.title}</h1>
+                    <a href="https://musical-brioche-39bb7b.netlify.app/"><h1>{props.frontmatter.title}<span><img className='link' src="/images/link.svg" alt="logo"/></span></h1></a>
+                    <p>(*動作しない場合は数秒あけてリロードしてください)</p>
                     <p>{props.frontmatter.date}</p>
+                    <div className='githubURL'>
+                        <a href="https://github.com/ryo3568/TsundokuTower"><img src="/images/github.jpg" alt="logo"/></a>
+                    </div>
                     <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
                 </div>
                 <PrevNext prev={props.prev} next={props.next} />

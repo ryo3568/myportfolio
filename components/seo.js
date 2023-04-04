@@ -5,7 +5,7 @@ const Seo = (props) => {
     const router = useRouter()
     const baseUrl = "http://localhost:3000"
     const currentUrl = baseUrl + router.pathname 
-    const defaultImage = `${baseUrl}/images/social-card.png`
+    const defaultImage = `${baseUrl}/images/logo.jpg`
     return (
         <Head>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />

@@ -2,6 +2,14 @@
     padding: 7rem 0 10rem;     
 }
 
+.link{
+    height: 3rem;
+}
+
+.githubURL > a > img {
+    height: 5rem;
+}
+
 .blogCard {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -18,10 +26,11 @@
 .cardContainer > a {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #ff5436;
+    background-color: #3d4b82;
     color: #fff;
     border-radius: 5px;
     font-size: 1.4rem;
+    margin-top: 2rem;
 }
 
 .linkButton:hover {
@@ -45,7 +54,7 @@
 }
 
 .paginationWrapper > a {
-    color: #ff5436;
+    color: #3d4b82;
     padding: 0 1rem;
 }
 
