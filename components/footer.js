@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <div className='insideContainer'>
                 <a href="https://github.com/ryo3568"><img src="/images/github.jpg" alt="logo"/></a>
-                <a href="https://twitter.com/ryoyanagi314"><img src="/images/twitter.jpg" alt="logo"/></a>
+                <a href="https://twitter.com/yana31415"><img src="/images/twitter.jpg" alt="logo"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100089916095333"><img src="/images/facebook.jpg" alt="logo"/></a>
                 <hr/>
                 <Link href="/blog">Works</Link>
